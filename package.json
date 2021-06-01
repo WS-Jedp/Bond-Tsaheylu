@@ -1,0 +1,58 @@
+{
+  "name": "bond-tsaheylu",
+  "version": "0.0.0",
+  "description": "Bond or Tsaheylu for the close friends, it's a project in progress to help humankind to connect better with emotions and environment.",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "ts-node -r tsconfig-paths/register src/index.ts",
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WS-Jedp/Bond-Tsaheylu.git"
+  },
+  "keywords": [
+    "bond",
+    "connection",
+    "avatar",
+    "emotions",
+    "feeling",
+    "library",
+    "tool",
+    "humankind"
+  ],
+  "author": "Juno <WS-Jedp>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/WS-Jedp/Bond-Tsaheylu/issues"
+  },
+  "homepage": "https://github.com/WS-Jedp/Bond-Tsaheylu#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.6.1",
+    "jest": "^27.0.3",
+    "ts-jest": "^27.0.2",
+    "ts-loader": "^9.2.2",
+    "ts-node": "^10.0.0",
+    "tsconfig-paths": "^3.9.0",
+    "typescript": "^4.3.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.(t|j)s"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}

@@ -1,3 +1,4 @@
 "use strict"
+import { AffinityAlgorithm } from '@algorithms/affinityAlgorithm'
 
-export {}
+export const Affinity = AffinityAlgorithm

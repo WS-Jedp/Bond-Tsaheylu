@@ -5,7 +5,7 @@
   "main": "src/index.ts",
   "scripts": {
     "dev": "ts-node -r tsconfig-paths/register src/index.ts",
-    "build": "tsc",
+    "build": "tsc -r tsconfig-paths/register",
     "test": "jest",
     "test:watch": "jest --watch"
   },

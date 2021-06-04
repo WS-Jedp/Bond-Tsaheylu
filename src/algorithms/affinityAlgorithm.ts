@@ -12,7 +12,7 @@ export const AffinityAlgorithm = (options:AffinityAlgorithmParams) => {
     let difference:number 
     let affinity:number
 
-    for(let i = 0; i < entities.length; i++) {
+    for(let i = 0; i < keys.length; i++) {
         comparedKeys = {
             ...comparedKeys,
             [keys[i]]: Math.abs(
@@ -24,9 +24,10 @@ export const AffinityAlgorithm = (options:AffinityAlgorithmParams) => {
     difference = Object.values(comparedKeys).reduce((prev, curr) => prev + curr)
 
     if(difference === 0 ) {
-        difference = maxValueDifference
+        affinity = ((100 * maxValueDifference) / maxValueDifference)
+    } else {
+        affinity = 100 - ((100 * difference) / maxValueDifference)
     }
 
-    affinity = (100 * difference) / maxValueDifference
-    return affinity.toFixed(2)
+    return parseFloat(affinity.toFixed(2))
 }

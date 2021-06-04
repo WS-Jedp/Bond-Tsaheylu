@@ -1,3 +1,4 @@
 "use strict"
+import { MultipleEntitiesAffinity as CalculateMultipleEntitiesAffinity } from './multipleEntitiesAffinity'
 
-export {}
+export const MultipleEntitiesAffinity = CalculateMultipleEntitiesAffinity

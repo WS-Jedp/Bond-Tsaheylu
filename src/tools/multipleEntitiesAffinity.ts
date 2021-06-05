@@ -1,4 +1,4 @@
-import { Affinity, Average } from '@algorithms/base'
+import { Affinity, Average } from '../algorithms/base'
 
 type MultipleEntitiesAffinityParameters = {
     entities: {[key:string]: number}[],

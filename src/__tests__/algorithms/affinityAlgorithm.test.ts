@@ -17,8 +17,8 @@ describe('Testing the Affinity Algorithms', () => {
         entities: entities,
         maxValueDifference: 2
     })
-    test('The result must be 0', () => {
-        expect(result).toBe(0)
+    test('The result must be 100', () => {
+        expect(result).toBe(100)
     })
     test('The result must be a number type of', () => {
         expect(typeof result).toBe('number')

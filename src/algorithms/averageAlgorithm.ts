@@ -2,7 +2,7 @@ type AverageParametersAlgorithm = {
     keys: string[],
     entities: {[key:string]: number}[]
 }
-export const averageAlgorithm = (options:AverageParametersAlgorithm) => {
+export const averageAlgorithm = (options:AverageParametersAlgorithm):{[key:string]: number} => {
     const { entities, keys } = options
     let averageEntity:{[key:string]: number} = {}
     

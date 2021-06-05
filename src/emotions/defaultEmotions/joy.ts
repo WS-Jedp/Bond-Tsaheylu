@@ -1,5 +1,5 @@
 "use strict"
-import { Emotion } from '@emotions/base'
+import { Emotion } from '../base'
 
 export class Joy extends Emotion {
     public static instance: Joy | null

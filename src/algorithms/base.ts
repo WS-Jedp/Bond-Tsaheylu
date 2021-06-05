@@ -1,6 +1,6 @@
 "use strict"
-import { AffinityAlgorithm } from '@algorithms/affinityAlgorithm'
-import { averageAlgorithm } from '@algorithms/averageAlgorithm'
+import { AffinityAlgorithm } from './affinityAlgorithm'
+import { averageAlgorithm } from './averageAlgorithm'
 
 export const Affinity = AffinityAlgorithm
 export const Average = averageAlgorithm
